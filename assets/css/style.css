@@ -1,0 +1,316 @@
+:root{
+    --main-color: black;
+    --main-color-lighter: #E6E6E6;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ---GLOBAL RULES--- */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.center {
+    text-align: center;
+}
+.border-bot{
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+/* ------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+html, body{
+    width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color: var(--main-color-lighter);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+#wrapper{
+    max-width: 1236px;
+    margin:12.5em auto 0 auto;
+    padding: 0 5em 1em 5em;
+    background-color: white;
+}
+span{
+    font-weight: bold;
+}
+
+figure img.sites{
+    width:100%;
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+
+
+    border-radius: 5px;
+    transition: transform 0.8s;
+}
+figure img.sites:hover{
+    transform: scale(1.1);
+}
+/* Header */
+
+header, footer{
+    background: black;
+    color:white;
+}
+
+header img {
+    width:12.4em;
+    border-radius: 50%;
+    position: absolute;
+    left: 1em;
+    top: 0;
+
+}
+header section{
+    flex:2;
+    align-self: center;
+}
+header section h1{
+    font-size: 3.5em;
+    text-align: center;
+}
+nav{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+nav a{
+    font-size: 1.5em;
+    padding: 5px 1.5em;
+}
+nav a:hover{
+   border-bottom: 2px solid white;
+}
+#burgerNav {
+    border: 2px solid var(--main-color-lighter);
+    color: var(--main-color-lighter);
+    margin-left: 1em;
+    padding: 0.25em;
+    display: none;
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
+}
+
+
+/* Main */
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+p>a:hover{
+    color:blue;
+}
+
+    /* Ma formation */
+
+#formation figure {
+    text-align: center;
+}
+#formation figure img{
+    height:200px;
+}
+#formation img{
+    height: 100px;
+}
+
+    /* Mes stage */
+
+.mise_en_page_figure figure{
+    display: flex;
+}
+.mise_en_page_figure figcaption{
+    margin:3em;
+    padding:1em;
+    align-self: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+div.flex div{
+    flex:0.75;
+    margin:3em;
+    padding:1em;
+    align-self: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#scrum{
+    height: 500px;
+}
+
+    /* Mes projets */
+
+    #reSize{
+        width: 75%;
+    }
+    figure div {
+        align-self: center;
+    }
+
+
+    /* Réseaux & Contact */
+
+    #contact img{
+        height:8em;
+    }
+    #contact a{
+        margin: 2em;
+    }
+    #contact div.center {
+        display:flex;
+        justify-content: center;
+        }
+    #contact div.center a {
+        display: flex;
+        align-items: center;
+    }
+    .socials{
+        transition: transform 0.8s;
+    }
+    .socials:hover{
+        transform: scale(1.2);
+    }
+
+
+    .buttonStyle{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+
+    hr.style-two {
+        width: 50%;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+        /* Form */
+        .form p{
+            margin-bottom: 1em;
+        }
+        input{      
+            padding: 1em;
+        }
+        input#sujet{
+            width: 30em;
+        }
+        textarea{
+            resize: vertical;
+            height:10em;
+            width: 30em;
+            padding: 1em;
+        }
+        .button{
+            background-color:black;
+            color:white;
+            padding: 10px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+        .displayNone{
+            display: none;
+        }
+
+
+/* Footer */
+
+    footer {
+        padding: 0.5em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+
+
+/* Ancre UP */
+
+.ancre{
+    position: fixed;
+    right:0;
+    width:100%;
+    bottom:5em;
+}
+#ancre-wrapper{
+    max-width: 1236px;
+    margin: auto;
+    position: relative;
+}
+.ancre a{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+.ancre i{
+    font-size: 4em;
+    background-color: white;
+    border-radius: 50%;
+    border:2px solid white;
+}
+
+
+
+/* Sticky menu and JS Classes */
+
+/* Script Sticky Menu ! */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+.sticky img{
+width: 80px;
+top:0.5em;
+}
+.sticky>div>section>h1{
+    font-size: 1.5em;
+    margin-bottom:0;
+}
+.sticky nav a{
+    font-size: 1em;
+}
+div>section>h1, nav a, header img {
+    transition: 1s;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#formation, #stages, #projets, #propos, #contact{
+    padding-top:5em;
+    margin-top: -5em;
+}
+
+/* .active{
+    border-bottom: 2px solid white;
+} */
+
