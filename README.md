@@ -17,3 +17,10 @@ https://www.w3schools.com/howto/howto_js_autocomplete.asp
 https://jqueryui.com/autocomplete/
 https://stackoverflow.com/questions/2257070/detect-numbers-or-letters-with-jquery-javascript
 https://stackoverflow.com/questions/43427578/javascript-onkeyup
+
+
+BurgerMenu -> transition !
+Tout virer et recommencer. Pas besoin keyframes !
+
+Mettre de la couleur !
+-> Reprendre les couleurs du CV ! :D
