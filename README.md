@@ -24,3 +24,9 @@ Tout virer et recommencer. Pas besoin keyframes !
 
 Mettre de la couleur !
 -> Reprendre les couleurs du CV ! :D
+
+
+
+Meta Description
+https://www.xml-sitemaps.com/details-www.sylvainallain.fr-eeeba234a.html
+http://tools.seobook.com/robots-txt/generator/
